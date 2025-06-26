@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <title>Film Recommendations</title>
+  <style>
+    html {
+  font-size: 16px;
+}
+body {
+  display: block;
+  background-color: orange;
+}
+h1, .SP {
+  color: blue;
+  text-align: center;
+}
+h1 {
+  font-size: 13vw; 
+}
+img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+label, input, select {
+  display: block;
+}
+.inline, .inline1 {
+  display: inline;
+}
+input[type="number"] {
+  width: 115px;
+  padding: 2px; 
+  }
+  .snack, p:last-of-type {
+    margin: 0 auto;
+    }
+    .block{
+      display: block;
+    }
+    textarea {
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px black
+    }
+    input[type="submit"] {
+      display: block;
+      margin: 5px auto 0
+      }
+  </style>
+    </head>
+  <body>
+    <h1 id="title">Extraordinary Attourney Woo</h1>
+    <p class="SP" id="description">A 2022 masterpiece, 이상한 변호사 우영우 (Extraordinary Attourney Woo) features star actress Park Eun-bin</p>
+    <img src="https://i.postimg.cc/WbnpmppY/Whale-EAW.png">
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal info:</legend>
+        <label for="name" id="name-label">Full name: <input id="name" type="text" placeholder="Insert your full name" required></label>
+      <label for="email" id="email-label">My email: <input type="email" id="email" name="email" placeholder="insert your email" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>FAQ</legend>
+        <label for="number" id="number-label">On a scale of 1 to 10, how would you rate the film: <input type="number" id="number" name="rating" min="1" max="10" placeholder="Insert your rating" required></label>
+        <label for="dropdown">Who's your favourite character: <select id="dropdown" name="characters" required>
+          <option value="" disabled selected>Select a Character</option>
+          <option value="woo young-woo">Woo Young-woo</option>
+          <option value="joon-ho, lee">Joon-ho, lee</option>
+          <option value="kwon min-woo">Kwon Min-woo</option>
+          <option value="choi soo-yeon">Choi Soo-yeon</option>
+          <option value="jung myung-seok">Jung Myung-seok</option>
+          </select></label>
+          <p>What's your <em>favourite</em> whale:</p>
+          <input class="inline" id="humpback" type="radio" value="humpbackWhale" name="whaleType">
+          <label for="whaleType" class="inline">Humpback Whale</lable>
+          <input class="inline" id="sperm" type="radio" value="spermWhale" name="whaleType">
+          <label for="whaleType" class="inline">Sperm Whale</lablel>
+        </fieldset>
+        <fieldset>
+          <legend><strong>Important</strong> questions</legend>
+          <p>What's your <em>favourite</em> movie snack?</p>
+          <div class="snack">
+            <div class="block"><label for="popcorn" class="inline1"><input type="checkbox" id="popcorn" class="inline1" name="movieSnack" value="popcorn">Popcorn</label></div>
+          <div class="block"><label for="nachos" class="inline1"><input type="checkbox" id="nachos" class="inline1" name="movieSnack" value="nachos">Nachos</label></div>
+          <div class="block"><label for="cottoncandy" class="inline1"><input type="checkbox" id="cottoncandy" class="inline1" name="movieSnack" value="cottonCandy">Cotton Candy?</label></div>
+          </div>
+          </fieldset>
+          <label for="feedback">Feedback on this film:
+            <textarea id="feedback" placeholder="Omg this film is so bombastic!"></textarea>
+          </label>
+          <input type="submit" id="submit">
+      </form>
+    </body>
+  </html>
